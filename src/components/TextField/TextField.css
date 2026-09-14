@@ -1,0 +1,39 @@
+.textfield {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+  & label {
+    position: absolute;
+    color: var(--color-on-tertiary);
+    padding: 10px 10px 5px;
+    transition:
+      0.3s font-size cubic-bezier(0.41, 1.64, 0.41, 0.8),
+      0.3s color cubic-bezier(0.41, 1.64, 0.41, 0.8),
+      0.3s font-weight linear;
+    &:has(+ input:focus),
+    &:has(+ textarea:focus),
+    &.not-empty {
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--color-on-tertiary);
+    }
+  }
+  & input,
+  textarea {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid var(--color-on-tertiary);
+    border-radius: 8px 8px 0 0;
+    padding: 30px 10px 5px;
+    &:focus {
+      outline: 0;
+      box-shadow: 3px rgba(--shadow / 20%);
+    }
+    &::placeholder {
+      color: transparent;
+      content: "";
+    }
+    background: var(--color-tertiary);
+    color: var(--color-on-tertiary);
+  }
+}

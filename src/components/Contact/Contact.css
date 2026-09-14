@@ -1,0 +1,93 @@
+#contact {
+  background-color: var(--color-tertiary-container);
+  display: flex;
+  flex-flow: column wrap;
+  h2 {
+    font-size: 2rem;
+    font-family: Inter;
+    width: 100%;
+  }
+  h2,
+  p {
+    padding: 20px 20px 10px;
+    color: var(--color-on-tertiary-container);
+  }
+  .side-to-side {
+    display: flex;
+    flex-flow: column wrap;
+    .column {
+      display: flex;
+      flex-flow: column wrap;
+      &.form {
+        form {
+          padding: 20px 20px 10px;
+          align-self: stretch;
+          flex-grow: 2;
+          display: flex;
+          flex-flow: column wrap;
+          gap: 16px;
+          justify-content: space-around;
+          textarea {
+            height: 180px;
+          }
+        }
+      }
+      &.socials {
+        .social-links {
+          padding: 20px 20px 10px;
+          display: flex;
+          flex-flow: row wrap;
+          gap: 8px;
+          justify-content: space-between;
+          align-items: flex-start;
+          align-self: flex-start;
+          padding-bottom: 30px;
+          button {
+            flex: 1 1 200px;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    padding: 20px 20px 10px;
+    color: var(--color-on-surface);
+    background-color: var(--color-surface);
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #contact {
+    .side-to-side {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      gap: 4em;
+      .column {
+        padding-bottom: 10px;
+        &.form {
+          flex-grow: 4;
+          form {
+            justify-content: flex-start;
+            gap: 16px;
+          }
+          border-right: 1px solid var(--color-on-tertiary);
+          padding-right: 4em;
+        }
+        &.socials {
+          max-width: 30%;
+          .social-links {
+            width: fit-content;
+            max-width: 100%;
+            box-sizing: border-box;
+            flex-flow: row wrap;
+            gap: 16px;
+            justify-content: flex-start;
+            button {
+              flex: 0 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

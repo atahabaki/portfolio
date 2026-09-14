@@ -1,0 +1,26 @@
+nav#navbar {
+  & ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-background);
+    & li {
+      list-style: none;
+      & a {
+        padding: 10px;
+        display: inline-block;
+        color: var(--color-on-background);
+        font-family: Inter;
+        &::before {
+          content: "#";
+        }
+        &:hover {
+          color: var(--color-on-primary);
+          text-decoration: underline;
+          background-color: var(--color-primary);
+        }
+      }
+    }
+  }
+}
