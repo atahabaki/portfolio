@@ -2,33 +2,35 @@ import { useState } from "react";
 import IconButton from "../IconButton/IconButton";
 import TextField from "../TextField/TextField";
 import "./Contact.css";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
   const mailToPrefix = "mailto:atahabaki@protonmail.com";
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const toUri = `${mailToPrefix}?subject=${encodeURI(subject)}&body=${encodeURI(message)}`;
   return (
     <div id="contact">
-      <h2>Let's Build Together</h2>
+      <h2>{t(($) => $["buildTogether"])}</h2>
       <div className="side-to-side">
         <div className="column form">
-          <p>Would like to work with me or discuss a project? Feel free to get in touch:</p>
+          <p>{t(($) => $["contactMe"])}</p>
           <form>
             <TextField
               name="subject"
-              placeholder="Subject:"
+              placeholder={t(($) => $["subject"])}
               onChange={(e) => setSubject(e.target.value)}
             />
             <TextField
               name="message"
-              placeholder="Message:"
+              placeholder={t(($) => $["message"])}
               type="text"
               multiline
               onChange={(e) => setMessage(e.target.value)}
             />
             <IconButton
-              name="Send Me an E-Mail"
+              name={t(($) => $["sendMeEMail"])}
               icon="protonmail"
               to={toUri}
               type="submit"
@@ -37,7 +39,7 @@ const Contact = () => {
           </form>
         </div>
         <div className="column socials">
-          <p>Or connect with me on social media:</p>
+          <p>{t(($) => $["connectWithMe"])}</p>
           <div className="social-links">
             {[
               { icon: "github", name: "GitHub", to: "https://github.com/atahabaki" },
@@ -64,9 +66,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <p className="footer">
-        &copy; 2026 A. Taha Baki. Engineered with logic, designed with passion.
-      </p>
+      <p className="footer">{t(($) => $["footer"])}</p>
     </div>
   );
 };
