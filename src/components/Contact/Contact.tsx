@@ -1,17 +1,13 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import IconButton from "../IconButton/IconButton";
 import TextField from "../TextField/TextField";
 import "./Contact.css";
 
 const Contact = () => {
   const mailToPrefix = "mailto:atahabaki@protonmail.com";
-  const [to, setTo] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
-  useEffect(() => {
-    let uri = `${mailToPrefix}?subject=${encodeURI(subject)}&body=${encodeURI(message)}`;
-    setTo(uri);
-  }, [subject, message]);
+  const toUri = `${mailToPrefix}?subject=${encodeURI(subject)}&body=${encodeURI(message)}`;
   return (
     <div id="contact">
       <h2>Let's Build Together</h2>
@@ -31,7 +27,13 @@ const Contact = () => {
               multiline
               onChange={(e) => setMessage(e.target.value)}
             />
-            <IconButton name="Send Me an E-Mail" icon="protonmail" to={to} type="submit" elevated />
+            <IconButton
+              name="Send Me an E-Mail"
+              icon="protonmail"
+              to={toUri}
+              type="submit"
+              elevated
+            />
           </form>
         </div>
         <div className="column socials">

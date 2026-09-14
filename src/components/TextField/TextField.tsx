@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "./TextField.css";
 
 type TextFieldProps = {
@@ -15,15 +15,17 @@ type TextFieldProps = {
 
 const TextField = ({ type, name, placeholder, multiline, onChange }: TextFieldProps) => {
   const [content, setContent] = useState("");
-  const [labelClassName, setLabelClassName] = useState("");
-  useEffect(() => {
-    console.log(content.length);
-    if (content.trim() === "") {
-      setLabelClassName("");
-    } else {
-      setLabelClassName("not-empty");
+  const labelClassName = content.trim() === "" ? "" : "not-empty";
+  const handleInputChange = (
+    e:
+      | React.ChangeEvent<HTMLTextAreaElement, HTMLTextAreaElement>
+      | React.ChangeEvent<HTMLInputElement, HTMLInputElement>,
+  ) => {
+    setContent(e.target.value);
+    if (onChange) {
+      onChange(e);
     }
-  }, [content]);
+  };
 
   return (
     <div className="textfield">
@@ -35,12 +37,7 @@ const TextField = ({ type, name, placeholder, multiline, onChange }: TextFieldPr
           name={name}
           placeholder={placeholder}
           value={content}
-          onChange={(e) => {
-            setContent(e.target.value);
-            if (onChange != undefined) {
-              onChange(e);
-            }
-          }}
+          onChange={(e) => handleInputChange(e)}
         />
       ) : (
         <input
@@ -48,12 +45,7 @@ const TextField = ({ type, name, placeholder, multiline, onChange }: TextFieldPr
           type={type}
           placeholder={placeholder}
           value={content}
-          onChange={(e) => {
-            setContent(e.target.value);
-            if (onChange != undefined) {
-              onChange(e);
-            }
-          }}
+          onChange={(e) => handleInputChange(e)}
         />
       )}
     </div>
