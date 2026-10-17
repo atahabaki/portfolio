@@ -12,18 +12,29 @@ type IconButtonProps = {
     | "secondary-inverted"
     | "tertiary"
     | "tertiary-inverted"
+    | "surface"
+    | "surface-inverted"
+    | "surface-variant"
+    | "surface-variant-inverted"
+    | "inverse-surface"
     | undefined;
+  inline?: boolean;
   elevated?: boolean;
 };
 
-const IconButton = ({ to, icon, name, type, buttonType, elevated }: IconButtonProps) => {
+const IconButton = ({ to, icon, name, type, buttonType, inline, elevated }: IconButtonProps) => {
   return (
     <button className="icon-button" type={type}>
-      <a href={to} className={`${buttonType} ${elevated ? "elevated" : ""}`} target="_blank">
+      <a
+        href={to}
+        className={`${buttonType} ${elevated ? "elevated" : ""}${inline ? "inline" : ""}`}
+        target="_blank"
+      >
+        {inline ? name : null}
         <svg className="button-icon" role="presentation" aria-hidden="true">
           <use href={`/icons.svg#${icon}`}></use>
         </svg>
-        {name}
+        {inline ? null : name}
       </a>
     </button>
   );

@@ -19,6 +19,12 @@ button.icon-button {
     &.elevated {
       box-shadow: 0 1px 3px 0px rgb(0 0 0 / 30%);
     }
+    &.inline {
+      padding: 2px 4px;
+      gap: unset;
+      font-size: unset;
+      gap: 2px;
+    }
     &.primary {
       background-color: var(--color-primary-container);
       color: var(--color-on-primary-container);
@@ -100,6 +106,76 @@ button.icon-button {
         color: var(--color-on-tertiary-container);
         & .button-icon {
           fill: var(--color-on-tertiary-container);
+        }
+      }
+    }
+    &.surface {
+      background-color: var(--color-surface);
+      color: var(--color-on-surface);
+      & .button-icon {
+        fill: var(--color-on-surface);
+      }
+      &:hover {
+        background-color: var(--color-on-surface);
+        color: var(--color-surface);
+        & .button-icon {
+          fill: var(--color-surface);
+        }
+      }
+    }
+    &.surface-inverted {
+      background-color: var(--color-on-surface);
+      color: var(--color-surface);
+      & .button-icon {
+        fill: var(--color-surface);
+      }
+      &:hover {
+        background-color: var(--color-surface);
+        color: var(--color-on-surface);
+        & .button-icon {
+          fill: var(--color-on-surface);
+        }
+      }
+    }
+    &.surface-variant {
+      background-color: var(--color-surface-variant);
+      color: var(--color-on-surface-variant);
+      & .button-icon {
+        fill: var(--color-on-surface-variant);
+      }
+      &:hover {
+        background-color: var(--color-on-surface-variant);
+        color: var(--color-surface-variant);
+        & .button-icon {
+          fill: var(--color-surface-variant);
+        }
+      }
+    }
+    &.surface-variant-inverted {
+      background-color: var(--color-on-surface-variant);
+      color: var(--color-surface-variant);
+      & .button-icon {
+        fill: var(--color-surface-variant);
+      }
+      &:hover {
+        background-color: var(--color-surface-variant);
+        color: var(--color-on-surface-variant);
+        & .button-icon {
+          fill: var(--color-on-surface-variant);
+        }
+      }
+    }
+    &.inverse-surface {
+      background-color: var(--color-inverse-on-surface);
+      color: var(--color-inverse-surface);
+      & .button-icon {
+        fill: var(--color-inverse-surface);
+      }
+      &:hover {
+        background-color: var(--color-inverse-surface);
+        color: var(--color-inverse-on-surface);
+        & .button-icon {
+          fill: var(--color-inverse-on-surface);
         }
       }
     }
