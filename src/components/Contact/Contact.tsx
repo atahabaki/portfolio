@@ -12,9 +12,9 @@ const Contact = () => {
   const toUri = `${mailToPrefix}?subject=${encodeURI(subject)}&body=${encodeURI(message)}`;
   return (
     <div id="contact">
-      <h2>{t(($) => $["buildTogether"])}</h2>
       <div className="side-to-side">
         <div className="column form">
+          <h2>{t(($) => $["buildTogether"])}</h2>
           <p>{t(($) => $["contactMe"])}</p>
           <form>
             <TextField
@@ -55,13 +55,7 @@ const Contact = () => {
                 to: "https://buymeacoff.ee/atahabaki",
               },
             ].map(({ name, icon, to }) => (
-              <IconButton
-                key={name}
-                name={name}
-                icon={icon}
-                to={to}
-                buttonType="primary-inverted"
-              />
+              <IconButton key={name} name={name} icon={icon} to={to} />
             ))}
           </div>
         </div>

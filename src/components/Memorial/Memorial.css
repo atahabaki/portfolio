@@ -1,0 +1,44 @@
+#memorial {
+  background: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
+  padding: 20px 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  div {
+    max-width: 680px;
+  }
+  a {
+    &.uppercase {
+      display: block;
+      text-transform: uppercase;
+      color: var(--color-tertiary);
+      &::before {
+        content: "🥀 ";
+      }
+    }
+  }
+  h2 {
+    font-size: 1.5rem;
+    font-family: Inter;
+    width: 100%;
+  }
+  p,
+  h2 {
+    padding: 20px 20px 10px;
+  }
+  p { padding-top: 10px; }
+  hr {
+    margin: 80px 0;
+    color: var(--color-tertiary);
+    opacity: 50%;
+  }
+  p + button.icon-button {
+    padding: 20px 20px 10px;
+  }
+  h2 + p {
+    button.icon-button {
+      text-decoration: underline dotted;
+    }
+  }
+}

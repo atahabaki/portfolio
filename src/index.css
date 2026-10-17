@@ -94,7 +94,3 @@
     --on-error-container: 255 218 214;
   }
 }
-
-a {
-  color: var(--text);
-}
