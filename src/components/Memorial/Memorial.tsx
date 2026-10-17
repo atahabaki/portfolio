@@ -14,7 +14,7 @@ const Memorial = () => {
             icon="external-link"
             name="Anıt Sayaç"
             inline
-            buttonType="secondary"
+            buttonType="primary-inverted"
             to="https://anitsayac.com/"
             type="button"
           />
@@ -39,7 +39,7 @@ const Memorial = () => {
           name={t(($) => $["visitAnitSayac"])}
           to="https://anitsayac.com/"
           type="button"
-          buttonType="secondary-inverted"
+          buttonType="primary-inverted"
         />
       </div>
     </div>
