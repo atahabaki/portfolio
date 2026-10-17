@@ -2,7 +2,7 @@ button.icon-button {
   & a {
     display: flex;
     font-size: 16px;
-    gap: 16px;
+    gap: 8px;
     padding: 8px 16px;
     align-items: center;
     border-radius: 8px;
@@ -20,10 +20,14 @@ button.icon-button {
       box-shadow: 0 1px 3px 0px rgb(0 0 0 / 30%);
     }
     &.inline {
-      padding: 2px 4px;
-      gap: unset;
+      padding: 0 4px;
       font-size: unset;
       gap: 2px;
+      text-decoration: underline 1px dotted;
+      & .button-icon {
+        width: 16px;
+        height: 16px;
+      }
     }
     &.primary {
       background-color: var(--color-primary-container);
