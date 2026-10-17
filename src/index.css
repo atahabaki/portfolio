@@ -94,3 +94,17 @@
     --on-error-container: 255 218 214;
   }
 }
+
+h2 {
+    font-size: 2rem;
+    font-family: Inter;
+    width: 100%;
+}
+
+p,
+h2 {
+  padding: 20px 20px 10px;
+}
+p {
+  padding-top: 10px;
+}
