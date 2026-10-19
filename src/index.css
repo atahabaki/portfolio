@@ -107,7 +107,7 @@
 }
 
 body {
-    background-color: var(--md-sys-color-background);
+  background-color: var(--md-sys-color-background);
 }
 h1,
 h2,
@@ -166,7 +166,7 @@ h6 {
 }
 p,
 a {
-  font-family: serif;
+  font-family: sans-serif;
   font-size: 1rem;
   line-height: 2;
   margin-top: 0.75rem;

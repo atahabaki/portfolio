@@ -1,6 +1,8 @@
 button.icon-button {
   & a {
     display: flex;
+    font-family: sans-serif;
+    font-weight: 600;
     gap: 0.5rem;
     padding: 0.5rem 1rem;
     align-items: center;
@@ -11,12 +13,14 @@ button.icon-button {
       0.3s box-shadow cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s background-color cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s color cubic-bezier(0.47, 1.64, 0.41, 0.8),
+      0.3s font-weight cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s padding cubic-bezier(0.47, 1.64, 0.41, 0.8);
     &:hover {
       padding: 0.5rem 1.25rem;
+      font-weight: 800;
     }
     &.elevated {
-      box-shadow: 0 0.1rem 0.25rem 0 rgba(--shadow / 30%);
+      box-shadow: 0 0.1rem 0.25rem 0 rgba(0 0 0 / 30%);
     }
     &.inline {
       padding: 0 0.25rem;
@@ -29,7 +33,7 @@ button.icon-button {
       }
     }
     &:hover {
-      box-shadow: 0 0.25rem 0.5rem 0 rgba(--shadow / 50%);
+      box-shadow: 0 0.25rem 0.5rem 0 rgba(0 0 0 / 50%);
     }
     & .button-icon {
       fill: var(--md-sys-color-on-tertiary);
@@ -40,12 +44,14 @@ button.icon-button {
     &.primary {
       background-color: var(--md-sys-color-primary-container);
       color: var(--md-sys-color-on-primary-container);
+      text-decoration-color: var(--md-sys-color-on-primary-container);
       & .button-icon {
         fill: var(--md-sys-color-on-primary-container);
       }
       &:hover {
         background-color: var(--md-sys-color-on-primary-container);
         color: var(--md-sys-color-primary-container);
+        text-decoration-color: var(--md-sys-color-primary-container);
         & .button-icon {
           fill: var(--md-sys-color-primary-container);
         }
@@ -54,12 +60,14 @@ button.icon-button {
     &.primary-inverted {
       background-color: var(--md-sys-color-on-primary-container);
       color: var(--md-sys-color-primary-container);
+      text-decoration-color: var(--md-sys-color-primary-container);
       & .button-icon {
         fill: var(--md-sys-color-primary-container);
       }
       &:hover {
         background-color: var(--md-sys-color-primary-container);
         color: var(--md-sys-color-on-primary-container);
+        text-decoration-color: var(--md-sys-color-on-primary-container);
         & .button-icon {
           fill: var(--md-sys-color-on-primary-container);
         }
@@ -68,12 +76,14 @@ button.icon-button {
     &.secondary {
       background-color: var(--md-sys-color-secondary-container);
       color: var(--md-sys-color-on-secondary-container);
+      text-decoration-color: var(--md-sys-color-on-secondary-container);
       & .button-icon {
         fill: var(--md-sys-color-on-secondary-container);
       }
       &:hover {
         background-color: var(--md-sys-color-on-secondary-container);
         color: var(--md-sys-color-secondary-container);
+        text-decoration-color: var(--md-sys-color-secondary-container);
         & .button-icon {
           fill: var(--md-sys-color-secondary-container);
         }
@@ -82,12 +92,14 @@ button.icon-button {
     &.secondary-inverted {
       background-color: var(--md-sys-color-on-secondary-container);
       color: var(--md-sys-color-secondary-container);
+      text-decoration-color: var(--md-sys-color-secondary-container);
       & .button-icon {
         fill: var(--md-sys-color-secondary-container);
       }
       &:hover {
         background-color: var(--md-sys-color-secondary-container);
         color: var(--md-sys-color-on-secondary-container);
+        text-decoration-color: var(--md-sys-color-on-secondary-container);
         & .button-icon {
           fill: var(--md-sys-color-on-secondary-container);
         }
@@ -96,12 +108,14 @@ button.icon-button {
     &.tertiary {
       background-color: var(--md-sys-color-tertiary-container);
       color: var(--md-sys-color-on-tertiary-container);
+      text-decoration-color: var(--md-sys-color-on-tertiary-container);
       & .button-icon {
         fill: var(--md-sys-color-on-tertiary-container);
       }
       &:hover {
         background-color: var(--md-sys-color-on-tertiary-container);
         color: var(--md-sys-color-tertiary-container);
+        text-decoration-color: var(--md-sys-color-tertiary-container);
         & .button-icon {
           fill: var(--md-sys-color-tertiary-container);
         }
@@ -110,12 +124,14 @@ button.icon-button {
     &.tertiary-inverted {
       background-color: var(--md-sys-color-on-tertiary-container);
       color: var(--md-sys-color-tertiary-container);
+      text-decoration-color: var(--md-sys-color-tertiary-container);
       & .button-icon {
         fill: var(--md-sys-color-tertiary-container);
       }
       &:hover {
         background-color: var(--md-sys-color-tertiary-container);
         color: var(--md-sys-color-on-tertiary-container);
+        text-decoration-color: var(--md-sys-color-on-tertiary-container);
         & .button-icon {
           fill: var(--md-sys-color-on-tertiary-container);
         }
@@ -124,12 +140,14 @@ button.icon-button {
     &.surface {
       background-color: var(--md-sys-color-surface);
       color: var(--md-sys-color-on-surface);
+      text-decoration-color: var(--md-sys-color-on-surface);
       & .button-icon {
         fill: var(--md-sys-color-on-surface);
       }
       &:hover {
         background-color: var(--md-sys-color-on-surface);
         color: var(--md-sys-color-surface);
+        text-decoration-color: var(--md-sys-color-surface);
         & .button-icon {
           fill: var(--md-sys-color-surface);
         }
@@ -138,12 +156,14 @@ button.icon-button {
     &.surface-inverted {
       background-color: var(--md-sys-color-on-surface);
       color: var(--md-sys-color-surface);
+      text-decoration-color: var(--md-sys-color-surface);
       & .button-icon {
         fill: var(--md-sys-color-surface);
       }
       &:hover {
         background-color: var(--md-sys-color-surface);
         color: var(--md-sys-color-on-surface);
+        text-decoration-color: var(--md-sys-color-on-surface);
         & .button-icon {
           fill: var(--md-sys-color-on-surface);
         }
@@ -152,12 +172,14 @@ button.icon-button {
     &.surface-variant {
       background-color: var(--md-sys-color-surface-variant);
       color: var(--md-sys-color-on-surface-variant);
+      text-decoration-color: var(--md-sys-color-on-surface-variant);
       & .button-icon {
         fill: var(--md-sys-color-on-surface-variant);
       }
       &:hover {
         background-color: var(--md-sys-color-on-surface-variant);
         color: var(--md-sys-color-surface-variant);
+        text-decoration-color: var(--md-sys-color-surface-variant);
         & .button-icon {
           fill: var(--md-sys-color-surface-variant);
         }
@@ -166,12 +188,14 @@ button.icon-button {
     &.surface-variant-inverted {
       background-color: var(--md-sys-color-on-surface-variant);
       color: var(--md-sys-color-surface-variant);
+      text-decoration-color: var(--md-sys-color-surface-variant);
       & .button-icon {
         fill: var(--md-sys-color-surface-variant);
       }
       &:hover {
         background-color: var(--md-sys-color-surface-variant);
         color: var(--md-sys-color-on-surface-variant);
+        text-decoration-color: var(--md-sys-color-on-surface-variant);
         & .button-icon {
           fill: var(--md-sys-color-on-surface-variant);
         }
@@ -180,12 +204,14 @@ button.icon-button {
     &.inverse-surface {
       background-color: var(--md-sys-color-inverse-on-surface);
       color: var(--md-sys-color-inverse-surface);
+      text-decoration-color: var(--md-sys-color-inverse-surface);
       & .button-icon {
         fill: var(--md-sys-color-inverse-surface);
       }
       &:hover {
         background-color: var(--md-sys-color-inverse-surface);
         color: var(--md-sys-color-inverse-on-surface);
+        text-decoration-color: var(--md-sys-color-inverse-on-surface);
         & .button-icon {
           fill: var(--md-sys-color-inverse-on-surface);
         }
