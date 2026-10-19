@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 :root {
   --md-sys-color-primary: rgb(128 61 154);
   --md-sys-color-surface-tint: rgb(133 65 159);
