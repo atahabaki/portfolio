@@ -6,7 +6,7 @@ import Memorial from "./components/Memorial/Memorial";
 
 function App() {
   return (
-    <main className="bg-surface">
+    <main>
       <NavBar />
       <Hero />
       <Memorial />

@@ -1,27 +1,27 @@
 button.icon-button {
   & a {
     display: flex;
-    gap: .5rem;
-    padding: .5rem 1rem;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
     align-items: center;
-    border-radius: .5rem;
-    background-color: var(--color-tertiary);
-    color: var(--color-on-tertiary);
+    border-radius: 0.5rem;
+    background-color: var(--md-sys-color-tertiary);
+    color: var(--md-sys-color-on-tertiary);
     transition:
       0.3s box-shadow cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s background-color cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s color cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s padding cubic-bezier(0.47, 1.64, 0.41, 0.8);
     &:hover {
-      padding: .5rem 1.25rem;
+      padding: 0.5rem 1.25rem;
     }
     &.elevated {
-      box-shadow: 0 .1rem .25rem 0 rgba(--shadow / 30%);
+      box-shadow: 0 0.1rem 0.25rem 0 rgba(--shadow / 30%);
     }
     &.inline {
-      padding: 0 .25rem;
+      padding: 0 0.25rem;
       font-size: unset;
-      gap: .25rem;
+      gap: 0.25rem;
       text-decoration: underline 0.1rem dotted;
       & .button-icon {
         width: 1rem;
@@ -29,165 +29,165 @@ button.icon-button {
       }
     }
     &:hover {
-      box-shadow: 0 .25rem .5rem 0 rgba(--shadow / 50%);
+      box-shadow: 0 0.25rem 0.5rem 0 rgba(--shadow / 50%);
     }
     & .button-icon {
-      fill: var(--color-on-tertiary);
+      fill: var(--md-sys-color-on-tertiary);
       width: 1.25rem;
       height: 1.25rem;
       transition: 0.3s fill cubic-bezier(0.47, 1.64, 0.41, 0.8);
     }
     &.primary {
-      background-color: var(--color-primary-container);
-      color: var(--color-on-primary-container);
+      background-color: var(--md-sys-color-primary-container);
+      color: var(--md-sys-color-on-primary-container);
       & .button-icon {
-        fill: var(--color-on-primary-container);
+        fill: var(--md-sys-color-on-primary-container);
       }
       &:hover {
-        background-color: var(--color-on-primary-container);
-        color: var(--color-primary-container);
+        background-color: var(--md-sys-color-on-primary-container);
+        color: var(--md-sys-color-primary-container);
         & .button-icon {
-          fill: var(--color-primary-container);
+          fill: var(--md-sys-color-primary-container);
         }
       }
     }
     &.primary-inverted {
-      background-color: var(--color-on-primary-container);
-      color: var(--color-primary-container);
+      background-color: var(--md-sys-color-on-primary-container);
+      color: var(--md-sys-color-primary-container);
       & .button-icon {
-        fill: var(--color-primary-container);
+        fill: var(--md-sys-color-primary-container);
       }
       &:hover {
-        background-color: var(--color-primary-container);
-        color: var(--color-on-primary-container);
+        background-color: var(--md-sys-color-primary-container);
+        color: var(--md-sys-color-on-primary-container);
         & .button-icon {
-          fill: var(--color-on-primary-container);
+          fill: var(--md-sys-color-on-primary-container);
         }
       }
     }
     &.secondary {
-      background-color: var(--color-secondary-container);
-      color: var(--color-on-secondary-container);
+      background-color: var(--md-sys-color-secondary-container);
+      color: var(--md-sys-color-on-secondary-container);
       & .button-icon {
-        fill: var(--color-on-secondary-container);
+        fill: var(--md-sys-color-on-secondary-container);
       }
       &:hover {
-        background-color: var(--color-on-secondary-container);
-        color: var(--color-secondary-container);
+        background-color: var(--md-sys-color-on-secondary-container);
+        color: var(--md-sys-color-secondary-container);
         & .button-icon {
-          fill: var(--color-secondary-container);
+          fill: var(--md-sys-color-secondary-container);
         }
       }
     }
     &.secondary-inverted {
-      background-color: var(--color-on-secondary-container);
-      color: var(--color-secondary-container);
+      background-color: var(--md-sys-color-on-secondary-container);
+      color: var(--md-sys-color-secondary-container);
       & .button-icon {
-        fill: var(--color-secondary-container);
+        fill: var(--md-sys-color-secondary-container);
       }
       &:hover {
-        background-color: var(--color-secondary-container);
-        color: var(--color-on-secondary-container);
+        background-color: var(--md-sys-color-secondary-container);
+        color: var(--md-sys-color-on-secondary-container);
         & .button-icon {
-          fill: var(--color-on-secondary-container);
+          fill: var(--md-sys-color-on-secondary-container);
         }
       }
     }
     &.tertiary {
-      background-color: var(--color-tertiary-container);
-      color: var(--color-on-tertiary-container);
+      background-color: var(--md-sys-color-tertiary-container);
+      color: var(--md-sys-color-on-tertiary-container);
       & .button-icon {
-        fill: var(--color-on-tertiary-container);
+        fill: var(--md-sys-color-on-tertiary-container);
       }
       &:hover {
-        background-color: var(--color-on-tertiary-container);
-        color: var(--color-tertiary-container);
+        background-color: var(--md-sys-color-on-tertiary-container);
+        color: var(--md-sys-color-tertiary-container);
         & .button-icon {
-          fill: var(--color-tertiary-container);
+          fill: var(--md-sys-color-tertiary-container);
         }
       }
     }
     &.tertiary-inverted {
-      background-color: var(--color-on-tertiary-container);
-      color: var(--color-tertiary-container);
+      background-color: var(--md-sys-color-on-tertiary-container);
+      color: var(--md-sys-color-tertiary-container);
       & .button-icon {
-        fill: var(--color-tertiary-container);
+        fill: var(--md-sys-color-tertiary-container);
       }
       &:hover {
-        background-color: var(--color-tertiary-container);
-        color: var(--color-on-tertiary-container);
+        background-color: var(--md-sys-color-tertiary-container);
+        color: var(--md-sys-color-on-tertiary-container);
         & .button-icon {
-          fill: var(--color-on-tertiary-container);
+          fill: var(--md-sys-color-on-tertiary-container);
         }
       }
     }
     &.surface {
-      background-color: var(--color-surface);
-      color: var(--color-on-surface);
+      background-color: var(--md-sys-color-surface);
+      color: var(--md-sys-color-on-surface);
       & .button-icon {
-        fill: var(--color-on-surface);
+        fill: var(--md-sys-color-on-surface);
       }
       &:hover {
-        background-color: var(--color-on-surface);
-        color: var(--color-surface);
+        background-color: var(--md-sys-color-on-surface);
+        color: var(--md-sys-color-surface);
         & .button-icon {
-          fill: var(--color-surface);
+          fill: var(--md-sys-color-surface);
         }
       }
     }
     &.surface-inverted {
-      background-color: var(--color-on-surface);
-      color: var(--color-surface);
+      background-color: var(--md-sys-color-on-surface);
+      color: var(--md-sys-color-surface);
       & .button-icon {
-        fill: var(--color-surface);
+        fill: var(--md-sys-color-surface);
       }
       &:hover {
-        background-color: var(--color-surface);
-        color: var(--color-on-surface);
+        background-color: var(--md-sys-color-surface);
+        color: var(--md-sys-color-on-surface);
         & .button-icon {
-          fill: var(--color-on-surface);
+          fill: var(--md-sys-color-on-surface);
         }
       }
     }
     &.surface-variant {
-      background-color: var(--color-surface-variant);
-      color: var(--color-on-surface-variant);
+      background-color: var(--md-sys-color-surface-variant);
+      color: var(--md-sys-color-on-surface-variant);
       & .button-icon {
-        fill: var(--color-on-surface-variant);
+        fill: var(--md-sys-color-on-surface-variant);
       }
       &:hover {
-        background-color: var(--color-on-surface-variant);
-        color: var(--color-surface-variant);
+        background-color: var(--md-sys-color-on-surface-variant);
+        color: var(--md-sys-color-surface-variant);
         & .button-icon {
-          fill: var(--color-surface-variant);
+          fill: var(--md-sys-color-surface-variant);
         }
       }
     }
     &.surface-variant-inverted {
-      background-color: var(--color-on-surface-variant);
-      color: var(--color-surface-variant);
+      background-color: var(--md-sys-color-on-surface-variant);
+      color: var(--md-sys-color-surface-variant);
       & .button-icon {
-        fill: var(--color-surface-variant);
+        fill: var(--md-sys-color-surface-variant);
       }
       &:hover {
-        background-color: var(--color-surface-variant);
-        color: var(--color-on-surface-variant);
+        background-color: var(--md-sys-color-surface-variant);
+        color: var(--md-sys-color-on-surface-variant);
         & .button-icon {
-          fill: var(--color-on-surface-variant);
+          fill: var(--md-sys-color-on-surface-variant);
         }
       }
     }
     &.inverse-surface {
-      background-color: var(--color-inverse-on-surface);
-      color: var(--color-inverse-surface);
+      background-color: var(--md-sys-color-inverse-on-surface);
+      color: var(--md-sys-color-inverse-surface);
       & .button-icon {
-        fill: var(--color-inverse-surface);
+        fill: var(--md-sys-color-inverse-surface);
       }
       &:hover {
-        background-color: var(--color-inverse-surface);
-        color: var(--color-inverse-on-surface);
+        background-color: var(--md-sys-color-inverse-surface);
+        color: var(--md-sys-color-inverse-on-surface);
         & .button-icon {
-          fill: var(--color-inverse-on-surface);
+          fill: var(--md-sys-color-inverse-on-surface);
         }
       }
     }

@@ -7,7 +7,7 @@ const Memorial = () => {
   return (
     <div id="memorial">
       <div>
-        <a className="uppercase">{t(($) => $["momentOfRemembrance"])}</a>
+        <h3 className="uppercase">{t(($) => $["momentOfRemembrance"])}</h3>
         <h2>{t(($) => $["beforeContinue"])}</h2>
         <p>
           <IconButton
@@ -27,7 +27,7 @@ const Memorial = () => {
           <em>{t(($) => $["mayRemembrance"])}</em>
         </p>
         <hr />
-        <a className="uppercase">{t(($) => $["responsibilityWeShare"])}</a>
+        <h3 className="uppercase">{t(($) => $["responsibilityWeShare"])}</h3>
         <h2>{t(($) => $["teachThem"])}</h2>
         <p>{t(($) => $["no1HasTheRight"])}</p>
         <p>

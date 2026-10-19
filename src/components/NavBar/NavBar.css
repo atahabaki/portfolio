@@ -4,21 +4,21 @@ nav#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-background);
+    background-color: var(--md-sys-color-background);
     & li {
       list-style: none;
       & a {
         padding: 1rem;
         display: inline-block;
-        color: var(--color-on-background);
+        color: var(--md-sys-color-on-background);
         font-family: Inter;
         &::before {
           content: "#";
         }
         &:hover {
-          color: var(--color-on-primary);
+          color: var(--md-sys-color-on-primary);
           text-decoration: underline;
-          background-color: var(--color-primary);
+          background-color: var(--md-syscolor-primary);
         }
       }
     }

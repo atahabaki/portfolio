@@ -1,25 +1,23 @@
 #memorial {
-  background: var(--color-secondary-container);
-  color: var(--color-on-secondary-container);
+  background: var(--md-sys-color-secondary-container);
+  color: var(--md-sys-color-on-secondary-container);
   display: flex;
   align-items: center;
   justify-content: center;
   div {
     max-width: 80ch;
   }
-  a {
-    &.uppercase {
-      display: block;
-      text-transform: uppercase;
-      color: var(--color-tertiary);
-      &::before {
-        content: "🥀 ";
-      }
+  .uppercase {
+    display: block;
+    text-transform: uppercase;
+    color: var(--md-sys-color-tertiary);
+    &::before {
+      content: "🥀 ";
     }
   }
   hr {
     margin: 5rem 0;
-    color: var(--color-tertiary);
+    color: var(--md-sys-color-tertiary);
     opacity: 50%;
   }
 }
