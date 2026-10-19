@@ -1,12 +1,11 @@
 #memorial {
   background: var(--color-secondary-container);
   color: var(--color-on-secondary-container);
-  padding: 20px 20px 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   div {
-    max-width: 680px;
+    max-width: 80ch;
   }
   a {
     &.uppercase {
@@ -18,15 +17,9 @@
       }
     }
   }
-  h2 {
-    font-size: 1.5rem;
-  }
   hr {
-    margin: 80px 0;
+    margin: 5rem 0;
     color: var(--color-tertiary);
     opacity: 50%;
-  }
-  p + button.icon-button {
-    padding: 20px 20px 10px;
   }
 }

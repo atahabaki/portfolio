@@ -5,7 +5,7 @@
   & label {
     position: absolute;
     color: var(--color-on-tertiary);
-    padding: 10px 10px 5px;
+    padding: .75rem .75rem .5rem;
     transition:
       0.3s font-size cubic-bezier(0.41, 1.64, 0.41, 0.8),
       0.3s color cubic-bezier(0.41, 1.64, 0.41, 0.8),
@@ -13,8 +13,8 @@
     &:has(+ input:focus),
     &:has(+ textarea:focus),
     &.not-empty {
-      font-size: 0.7rem;
-      font-weight: 800;
+      font-size: 0.75rem;
+      font-weight: 600;
       color: var(--color-on-tertiary);
     }
   }
@@ -22,12 +22,12 @@
   textarea {
     outline: 0;
     border: 0;
-    border-bottom: 1px solid var(--color-on-tertiary);
-    border-radius: 8px 8px 0 0;
-    padding: 30px 10px 5px;
+    border-bottom: .1rem solid var(--color-on-tertiary);
+    border-radius: .5rem .5rem 0 0;
+    padding: 2rem .75rem .5rem;
     &:focus {
       outline: 0;
-      box-shadow: 3px rgba(--shadow / 20%);
+      box-shadow: .25rem rgba(--shadow / 20%);
     }
     &::placeholder {
       color: transparent;
@@ -35,5 +35,8 @@
     }
     background: var(--color-tertiary);
     color: var(--color-on-tertiary);
+  }
+  textarea {
+      min-height: 10rem;
   }
 }

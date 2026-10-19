@@ -40,6 +40,7 @@ const Memorial = () => {
           to="https://anitsayac.com/"
           type="button"
           buttonType="primary-inverted"
+          elevated
         />
       </div>
     </div>

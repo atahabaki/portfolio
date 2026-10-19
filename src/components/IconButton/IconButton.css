@@ -1,11 +1,10 @@
 button.icon-button {
   & a {
     display: flex;
-    font-size: 16px;
-    gap: 8px;
-    padding: 8px 16px;
+    gap: .5rem;
+    padding: .5rem 1rem;
     align-items: center;
-    border-radius: 8px;
+    border-radius: .5rem;
     background-color: var(--color-tertiary);
     color: var(--color-on-tertiary);
     transition:
@@ -14,20 +13,29 @@ button.icon-button {
       0.3s color cubic-bezier(0.47, 1.64, 0.41, 0.8),
       0.3s padding cubic-bezier(0.47, 1.64, 0.41, 0.8);
     &:hover {
-      padding: 8px 20px;
+      padding: .5rem 1.25rem;
     }
     &.elevated {
-      box-shadow: 0 1px 3px 0px rgb(0 0 0 / 30%);
+      box-shadow: 0 .1rem .25rem 0 rgba(--shadow / 30%);
     }
     &.inline {
-      padding: 0 4px;
+      padding: 0 .25rem;
       font-size: unset;
-      gap: 2px;
-      text-decoration: underline 1px dotted;
+      gap: .25rem;
+      text-decoration: underline 0.1rem dotted;
       & .button-icon {
-        width: 16px;
-        height: 16px;
+        width: 1rem;
+        height: 1rem;
       }
+    }
+    &:hover {
+      box-shadow: 0 .25rem .5rem 0 rgba(--shadow / 50%);
+    }
+    & .button-icon {
+      fill: var(--color-on-tertiary);
+      width: 1.25rem;
+      height: 1.25rem;
+      transition: 0.3s fill cubic-bezier(0.47, 1.64, 0.41, 0.8);
     }
     &.primary {
       background-color: var(--color-primary-container);
@@ -182,15 +190,6 @@ button.icon-button {
           fill: var(--color-inverse-on-surface);
         }
       }
-    }
-    &:hover {
-      box-shadow: 0 3px 6px 0px rgb(0 0 0 / 50%);
-    }
-    & .button-icon {
-      fill: var(--color-on-tertiary);
-      width: 18px;
-      height: 18px;
-      transition: 0.3s fill cubic-bezier(0.47, 1.64, 0.41, 0.8);
     }
   }
 }
