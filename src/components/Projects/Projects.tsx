@@ -5,7 +5,11 @@ const Projects = () => {
   const { t } = useTranslation();
   return (
     <section id="projects">
-      <h2>{t(($) => $["projects"])}</h2>
+      <h2>
+        <svg className="button-icon" role="presentation" aria-hidden="true">
+          <use href={`/icons.svg#projects`}></use>
+        </svg>
+        {t(($) => $["projects"])}</h2>
     </section>
   );
 };

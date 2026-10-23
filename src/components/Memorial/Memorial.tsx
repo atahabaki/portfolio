@@ -6,7 +6,12 @@ const Memorial = () => {
   const { t } = useTranslation();
   return (
     <section id="memorial">
-      <h3 className="uppercase">{t(($) => $["momentOfRemembrance"])}</h3>
+      <h3 className="uppercase">
+        <svg className="button-icon" role="presentation" aria-hidden="true">
+          <use href={`/icons.svg#memorial`}></use>
+        </svg>
+        {t(($) => $["momentOfRemembrance"])}
+      </h3>
       <h2>{t(($) => $["beforeContinue"])}</h2>
       <p>
         <IconButton
@@ -26,7 +31,12 @@ const Memorial = () => {
         <em>{t(($) => $["mayRemembrance"])}</em>
       </p>
       <hr />
-      <h3 className="uppercase">{t(($) => $["responsibilityWeShare"])}</h3>
+      <h3 className="uppercase">
+        <svg className="button-icon" role="presentation" aria-hidden="true">
+          <use href={`/icons.svg#memorial`}></use>
+        </svg>
+        {t(($) => $["responsibilityWeShare"])}
+      </h3>
       <h2>{t(($) => $["teachThem"])}</h2>
       <p>{t(($) => $["no1HasTheRight"])}</p>
       <p>

@@ -12,7 +12,12 @@ const Contact = () => {
   const toUri = `${mailToPrefix}?subject=${encodeURI(subject)}&body=${encodeURI(message)}`;
   return (
     <section id="contact">
-      <h2>{t(($) => $["buildTogether"])}</h2>
+      <h2>
+        <svg className="button-icon" role="presentation" aria-hidden="true">
+          <use href={`/icons.svg#contact`}></use>
+        </svg>
+        {t(($) => $["buildTogether"])}
+      </h2>
       <p>{t(($) => $["contactMe"])}</p>
       <form>
         <TextField

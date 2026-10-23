@@ -169,7 +169,6 @@ h5,
 h6,
 a,
 p {
-  max-width: 80ch;
   text-align: left;
   color: var(--color-on-background);
 }
@@ -234,5 +233,5 @@ section {
   display: flex;
   flex-flow: column;
   align-items: first baseline;
-  padding: 3rem 20vh;
+  padding: 3rem clamp(2rem, 1rem + 10vw, 30vw);
 }

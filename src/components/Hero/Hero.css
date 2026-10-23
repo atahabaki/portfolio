@@ -1,0 +1,14 @@
+section#hero {
+    h1 {
+        display: flex;
+        flex-flow: column;
+        align-items: start;
+        justify-content: start;
+        gap: 1rem;
+        svg {
+            height: 3.75rem;
+            width: 3.75rem;
+            fill: var(--color-on-tertiary-container);
+        }
+    }
+}
