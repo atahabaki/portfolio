@@ -2,21 +2,21 @@ section#memorial {
   background-color: var(--color-secondary-container);
   color: var(--color-on-secondary-container);
   hr {
-      display: block;
-      width: 100%;
-      margin: 6vh 0;
+    display: block;
+    width: 100%;
+    margin: 6vh 0;
   }
   h3 {
-      color: var(--color-on-secondary-container);
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      justify-content: start;
-      gap: .5rem;
-      svg {
-          height: 1.75rem;
-          width: 1.75rem;
-          fill: var(--color-on-secondary-container);
-      }
+    color: var(--color-on-secondary-container);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5rem;
+    svg {
+      height: 1.75rem;
+      width: 1.75rem;
+      fill: var(--color-on-secondary-container);
+    }
   }
 }

@@ -10,7 +10,8 @@ const Hero = () => {
           <svg className="button-icon" role="presentation" aria-hidden="true">
             <use href={`/icons.svg#about`}></use>
           </svg>
-          A. Taha Baki</h1>
+          A. Taha Baki
+        </h1>
         <h2>{t(($) => $["hatCollector"])}</h2>
         <p>{t(($) => $["everyProblem"])}</p>
       </div>
