@@ -1,23 +1,4 @@
-#memorial {
-  background: var(--md-sys-color-secondary-container);
-  color: var(--md-sys-color-on-secondary-container);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  div {
-    max-width: 80ch;
-  }
-  .uppercase {
-    display: block;
-    text-transform: uppercase;
-    color: var(--md-sys-color-tertiary);
-    &::before {
-      content: "🥀 ";
-    }
-  }
-  hr {
-    margin: 5rem 0;
-    color: var(--md-sys-color-tertiary);
-    opacity: 50%;
-  }
+section#memorial {
+  background-color: var(--color-secondary-container);
+  color: var(--color-on-secondary-container);
 }
